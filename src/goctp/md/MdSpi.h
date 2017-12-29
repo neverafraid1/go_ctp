@@ -43,8 +43,6 @@ public:
     virtual void InitUserApiInfo(char *BrokerID,char* InvestorID,char *Password);
 
 private:
-	void ReqUserLogin();
-
 	bool IsErrorRspInfo(CThostFtdcRspInfoField *pRspInfo);
 
 private:

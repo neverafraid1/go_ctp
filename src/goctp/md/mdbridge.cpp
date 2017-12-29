@@ -1,5 +1,5 @@
 #include "ThostFtdcMdApi.h"
-#include "MdSpi.hpp"
+#include "MdSpi.h"
 #include "mdbridge.h"
 #include "_cgo_export.h"
 #include <iostream>

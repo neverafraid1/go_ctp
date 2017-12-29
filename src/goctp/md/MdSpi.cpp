@@ -1,26 +1,14 @@
-#include "MdSpi.hpp"
+#include "MdSpi.h"
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
 #include <cstdio>
 #include <time.h>
 #include <unistd.h>
-#include <ThostFtdcMdApi.h>
 #include "_cgo_export.h"
 using namespace std;
 
 #pragma warning(disable : 4996)
-
-// USER_API参数
-//extern CThostFtdcMdApi* pUserApi;
-
-// 配置参数
-extern char FRONT_ADDR[];
-extern TThostFtdcBrokerIDType	BROKER_ID;
-extern TThostFtdcInvestorIDType INVESTOR_ID;
-extern TThostFtdcPasswordType	PASSWORD;
-extern char* ppInstrumentID[];
-extern int iInstrumentID;
 
 void CMdSpi::OnRspError(CThostFtdcRspInfoField *pRspInfo,
 		int nRequestID, bool bIsLast)
